@@ -24,6 +24,21 @@
       type: "string"
       required: false
       default: ""
+    - variable: additional_params
+      description: "Additional Parameters to pass to mongod"
+      type: string
+      required: false
+      default: ""
+    - variable: mongodb_version
+      description: "Version of the MongoDB official container to pull (defaults to 3.2)"
+      type: string
+      required: false
+      default: 3.2
+    - variable: volume_driver
+      description: "Driver to use for data volumes (defaults to none)"
+      type: string
+      required: false
+      default: "none"
 mongo-cluster:
   scale: 3
   retain_ip: true
