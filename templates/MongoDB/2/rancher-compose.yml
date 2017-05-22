@@ -1,6 +1,6 @@
 .catalog:
-  name: "MongoDB"
-  version: "3.2-rancher2"
+  name: "TetraScience MongoDB"
+  version: "3.2-ts-rancher-1"
   description: "MongoDB Replica Set"
   uuid: mongodb-1
   minimum_rancher_version: v0.46.0
