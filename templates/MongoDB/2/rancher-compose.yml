@@ -25,16 +25,19 @@
       required: false
       default: ""
     - variable: additional_params
+      Label: "Additional parameters"
       description: "Additional Parameters to pass to mongod"
       type: string
       required: false
       default: ""
     - variable: mongodb_version
       description: "Version of the MongoDB official container to pull (defaults to 3.2)"
+      label: MongoDB Version
       type: string
       required: false
       default: 3.2
     - variable: volume_driver
+      label: Volume Driver
       description: "Driver to use for data volumes (defaults to none)"
       type: string
       required: false

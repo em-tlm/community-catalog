@@ -27,7 +27,6 @@ services:
       - mongo-base
   mongo-base:
     restart: always
-    net: none
     labels:
       io.rancher.scheduler.affinity:host_label: ${host_label}
       io.rancher.container.hostname_override: container_name
