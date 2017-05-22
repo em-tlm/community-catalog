@@ -25,7 +25,7 @@
       required: false
       default: ""
     - variable: additional_params
-      Label: "Additional parameters"
+      label: "Additional parameters"
       description: "Additional Parameters to pass to mongod"
       type: string
       required: false
