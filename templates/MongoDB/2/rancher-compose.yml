@@ -11,7 +11,7 @@
       type: "string"
       required: true
       default: "rs0"
-    - variable: host_label
+    - variable: host_labelproject
       label: "Host Label to MongoDB Tags"
       description: |
         Host label to use as MongoDB 'value' tag.
@@ -42,6 +42,11 @@
       type: string
       required: false
       default: "none"
+    - variable: driver_opts
+      Label: Driver Options
+      description: "A comma-separated list of driver options"
+      required: false
+      type: string
 mongo-cluster:
   scale: 3
   retain_ip: true
