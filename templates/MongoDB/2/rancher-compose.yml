@@ -46,7 +46,7 @@
       Label: Driver Options
       description: "A comma-separated list of driver options"
       required: false
-      type: string
+      type: multiline
 mongo-cluster:
   scale: 3
   retain_ip: true
