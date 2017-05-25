@@ -42,11 +42,11 @@
       type: string
       required: false
       default: "none"
-    - variable: driver_opts
+    - variable: size
       Label: Driver Options
       description: "A comma-separated list of driver options"
       required: false
-      type: multiline
+      type: int
 mongo-cluster:
   scale: 3
   retain_ip: true

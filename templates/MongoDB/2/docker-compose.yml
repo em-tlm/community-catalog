@@ -5,7 +5,7 @@ volumes:
     per_container: true
     driver: ${volume_driver}
     driver_opts:
-      ${driver_opts}
+      size: ${size}
 
 
 services:
