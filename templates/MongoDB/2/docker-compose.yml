@@ -3,10 +3,9 @@ version: '2'
 volumes:
   mongo-datavolume:
     per_container: true
-    driver: ${volume_driver}
+    driver: rancher-ebs
     driver_opts:
-      size: ${size}
-
+      size: 100
 
 services:
   mongo-cluster:
@@ -20,7 +19,6 @@ services:
     command:
     - --replSet
     - "${replset_name}"
-    - ${additional_params}
     image: mongo:${mongodb_version}
     labels:
       io.rancher.scheduler.affinity:host_label: ${host_label}
